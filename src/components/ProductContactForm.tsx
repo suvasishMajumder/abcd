@@ -20,6 +20,8 @@ const ProductContactForm: React.FC<ProductContactFormProps> = ({ productName = "
         message: ""
     });
 
+    console.log('ProductContactForm')
+
     const [focused, setFocused] = useState<IFocusedProductContactForm>({
         fname: false,
         email: false,

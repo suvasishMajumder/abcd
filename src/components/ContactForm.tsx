@@ -130,6 +130,9 @@ const ContactForm = () => {
     }
   };
 
+
+  console.log('Contact Form')
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}

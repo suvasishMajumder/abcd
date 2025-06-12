@@ -17,6 +17,9 @@ const testimonials: TTestimonials[] = [
 ];
 
 export default function Testimonials() {
+
+    console.log('Testimonials');
+
   return (
     <section className="relative overflow-hidden py-5 bg-gray-100 mt-[70px]">
       {/* Background decoration */}

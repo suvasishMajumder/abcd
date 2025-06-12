@@ -8,7 +8,7 @@ import type { RootState } from "../redux/store";
 export default function FeaturedCategories() {
   const catalogs = useSelector((state: RootState) => state.catalog.catalogs);
   const [hoveredCategory, setHoveredCategory] = useState<number | null>(null);
-
+console.log('Featured Categories')
   return (
     <section className="mt-20 py-5 my-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 z-[-1]"></div>

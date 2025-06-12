@@ -61,6 +61,9 @@ function SupplyChainDiagram() {
     "Telangana",
   ];
 
+
+  console.log('Supply Chain Diagram');
+
   return (
     <section className="my-5 relative overflow-hidden py-5 mx-4 rounded-[30px] md:mx-0 md:rounded-none">
       <div className="absolute inset-0 bg-gradient-to-br from-[#f0f9ff] to-[rgba(214,240,253,0.5)] z-[-1]"></div>

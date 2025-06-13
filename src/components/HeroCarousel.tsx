@@ -62,13 +62,30 @@ export default function HeroCarousel() {
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="relative h-[375px] md:h-[450px] sm:h-[350px] pl-[50px] sm:pl-5">
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 7, ease: "easeInOut" }}
                 className="absolute inset-0 bg-cover bg-center brightness-[0.85]"
                 style={{ backgroundImage: `url(${item.image})` }}
-              />
+              /> */}
+
+              <motion.div
+  initial={{ scale: 1.1 }}
+  animate={{ scale: 1 }}
+  transition={{ duration: 7, ease: "easeInOut" }}
+  className="absolute inset-0"
+>
+  <img
+    src={item.image}
+    alt={item.keyword}
+    loading="eager"
+    fetchPriority="high"
+    width="1920"
+    height="1080"
+    className="w-full h-full object-cover brightness-[0.85]"
+  />
+</motion.div>
               <div
                 className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/40 z-[1]"
               />
